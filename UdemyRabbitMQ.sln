@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34114.132
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyRabbitMQ.publisher", "UdemyRabbitMQ.publisher\UdemyRabbitMQ.publisher.csproj", "{D1E198AF-F4FD-43CF-85EF-724F975BE3B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyRabbitMQ.subscriber", "UdemyRabbitMQ.subscriber\UdemyRabbitMQ.subscriber.csproj", "{CAE52132-6A15-4BB9-8F31-9FEA66A07033}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyRabbitMQWeb.Watermark", "UdemyRabbitMQWeb.Watermark\UdemyRabbitMQWeb.Watermark.csproj", "{FFDF5186-FFE2-4991-949E-7A14D52B5D7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CAE52132-6A15-4BB9-8F31-9FEA66A07033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAE52132-6A15-4BB9-8F31-9FEA66A07033}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAE52132-6A15-4BB9-8F31-9FEA66A07033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFDF5186-FFE2-4991-949E-7A14D52B5D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFDF5186-FFE2-4991-949E-7A14D52B5D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFDF5186-FFE2-4991-949E-7A14D52B5D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFDF5186-FFE2-4991-949E-7A14D52B5D7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
