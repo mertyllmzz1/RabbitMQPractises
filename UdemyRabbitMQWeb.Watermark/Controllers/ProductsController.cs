@@ -79,7 +79,7 @@ namespace UdemyRabbitMQWeb.Watermark.Controllers
             _context.Add(product);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-            return View(product);
+
         }
 
         // GET: Products/Edit/5

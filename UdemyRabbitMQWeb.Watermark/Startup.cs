@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UdemyRabbitMQWeb.Watermark.BackgroundServices;
 using UdemyRabbitMQWeb.Watermark.Models;
 using UdemyRabbitMQWeb.Watermark.Services;
 
@@ -30,11 +31,13 @@ namespace UdemyRabbitMQWeb.Watermark
 		public void ConfigureServices(IServiceCollection services)
 		{
 			
-            services.AddSingleton(sp=>new ConnectionFactory(){ Uri=new Uri(Configuration.GetConnectionString("RabbitMQ"))});
+            services.AddSingleton(sp=>new ConnectionFactory(){ Uri=new Uri(Configuration.GetConnectionString("RabbitMQ")),DispatchConsumersAsync = true});
             services.AddSingleton<Services.RabbitMQClientService>();
             services.AddSingleton<RabbitMQPublisher>();
             services.AddDbContext<AppDbContext>(op => op.UseInMemoryDatabase(databaseName:"productDb"));
-			services.AddControllersWithViews();
+            services.AddHostedService<ImageWatermarkProcessBackgroundSercive>();
+            services.AddLogging();
+            services.AddControllersWithViews();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
