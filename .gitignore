@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/UdemyRabbitMQWeb.Watermark/wwwroot/images
+
+/UdemyRabbitMQWeb.Watermark/wwwroot/watermarks
